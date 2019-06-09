@@ -1,0 +1,49 @@
+# Five
+我的毕设
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div id="chessBg">
+		<canvas width="450" height="450" id="c1"></canvas>
+		<div class="mask1">
+			<form class="login" name="login" method="post">
+			请输入用户名：
+			<input type="text" name="username" id="username" placeholder=""><br/>
+			<input type="button" value="进入游戏" onclick="enterGame()">
+		    </form>
+		</div>
+
+		<div class="mask">
+			<div class="btn start">开始游戏</div>
+			<div class="btn about">关于</div>
+			<div class="btn exit">退出游戏</div>
+		</div>
+		<div class="functionBox" style="display: none">
+			<div class="function lose">认输</div>
+			<div class="function back">悔棋</div>
+			<div class="function restart">重新开始</div>
+		</div>
+		<div class="tool" style="display: none">
+			<input type="text" id="cTime" value="时间：0" readonly="readonly">
+			<input type="text" id="grade" value="得分：0" readonly="readonly">
+		</div>
+	</div>
+	<div class="aboutAlert">
+		<h2>益智五子棋小游戏</h2>
+		<p class="bottom">有部分功能完成，我们正在努力呢，请亲耐心等待我们的版本更新哦！</p>
+		<p class="bottom warning">建议使用谷歌浏览器</p>
+		<h3>开发人员</h3>
+		<h4>NUC 151401115 董雪亮</h4>
+		<div class="closeBtn">X</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="layer/layer.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>
